@@ -1,4 +1,3 @@
-##i!/usr/bin/perl -w
 use strict;
 use FileHandle;
 
@@ -35,7 +34,7 @@ sub eval_error {
 		set_ok(
 			0,
 			'got error ' .
-			"\n\t($JSON::Relaxed::err_id): $JSON::Relaxed::err_msg\n" .
+			"\n\t$JSON::Relaxed::err_id: $JSON::Relaxed::err_msg\n" .
 			'but expected error:' .
 			"\n\t$expected"
 		);
